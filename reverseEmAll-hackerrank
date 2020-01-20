@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    unsigned long long int t,n,rem,rev;
+    cin>>t;
+    while(t--)
+    {
+        cin>>n;
+        rev=0;
+        while(n!=0)
+        {
+            rem = n%10;
+            rev = rev * 10 + rem;
+            n=n/10;
+        }
+        cout<<rev<<"\n";
+    }
+    return 0;
+}
