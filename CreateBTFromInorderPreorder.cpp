@@ -44,7 +44,6 @@ int main()
     int *inorder = new int[n];
     int *preorder = new int[n];
     map<int , int> inorderIndex;
-    map<int , BT*> nodeAddress;
     for(i=0;i<n;i++)
     {
         cin>>inorder[i];
